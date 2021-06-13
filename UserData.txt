@@ -1,0 +1,5 @@
+Tan Pei Yong,20,1,Pfizer
+Ching Jia Ying,21,1,AstraZeneca
+Chia Jun Bin,43,1,Sinovac
+Chan Hui Xing,19,0,Sinovac
+Yeong Yen Ting,30,0,Pfizer
