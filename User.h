@@ -25,7 +25,7 @@ private:
 		std::string vaccineType;
 		int age;
 		int status;
-		Node* next = nullptr; // lmao tonullptr brooooo dev too much LOL 
+		Node* next = nullptr; 
 	};
 	
 	Node* head;
@@ -99,17 +99,6 @@ void User::enqueue(std::string name, int age, int status, std::string vaccineTyp
 	}
 	else
 	{
-		/*linkedlist implemenation:
-			ptr = head;
-
-			while (ptr->next)
-			{
-				ptr = ptr->next;
-				num_Registered_Users++;
-			}
-			ptr->next = newNode;
-		*/
-
 		rear->next = newNode;
 		rear = newNode;
 	}
@@ -245,72 +234,5 @@ void User::updateDatabase()
 	}
 	
 }
-
-
-//void User::registerUser()
-//{
-//	std::string name;
-//	int age;
-//	char char_vaccineType;
-//	std::string vaccineType;
-//
-//	std::cout << "Enter your name: ";
-//	std::getline(std::cin, name);
-//
-//	std::cout << "Enter your age: ";
-//	std::cin >> age;
-//
-//	if (age < 18)
-//	{
-//		std::cout << "\nSorry, you are not eligible for the vaccination program.";
-//		exit(0);
-//	}
-//
-//	std::cout << "Choose type of vaccine: "
-//		<< "\n[A] Pfizer"
-//		<< "\n[B] AstraZeneca"
-//		<< "\n[C] Sinovac\n";
-//	std::cin >> char_vaccineType;
-//
-//	char_vaccineType = toupper(char_vaccineType);
-//
-//	while (char_vaccineType != 'A' && char_vaccineType != 'B' && char_vaccineType != 'C')
-//	{
-//		std::cout << "\nInvalid input! Please try again.";
-//		std::cout << "\nChoose type of vaccine: "
-//			<< "\n[A] Pfizer"
-//			<< "\n[B] AstraZeneca"
-//			<< "\n[C] Sinovac\n";
-//		std::cin >> char_vaccineType;
-//
-//		char_vaccineType = toupper(char_vaccineType);
-//	}
-//
-//	if (char_vaccineType == 'A')
-//		vaccineType = "Pfizer";
-//	else if (char_vaccineType == 'B')
-//		vaccineType = "AstraZeneca";
-//	else if (char_vaccineType == 'C')
-//		vaccineType = "Sinovac";
-//
-//	std::fstream dataFile;
-//	dataFile.open("UserData.txt", std::ofstream::out | std::ofstream::app);
-//
-//	dataFile << name;
-//	dataFile << ",";
-//
-//	dataFile << age;
-//	dataFile << ",";
-//
-//	dataFile << 0; // status - all newly registered user pending 1st dose so 0 by default
-//	dataFile << ",";
-//
-//	dataFile << vaccineType;
-//	dataFile << "\n";
-//
-//	std::cout << "\nYou have been registered for vaccination successfully!";
-//
-//}
-
 
 #endif // !USER_H
