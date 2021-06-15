@@ -6,9 +6,7 @@
 #include <stdlib.h>
 #include "User.h"
 #include "VaccinationCenter.h"
-// eh i think there might be some delay 
-// hi jem // HIHIHI       // YOLO
-// say hi in whastapp whenu see this
+
 int main()
 {
 	VaccinationCenter vac;
@@ -121,18 +119,6 @@ int main()
 		<< "\nThank you for using Vaccination Program Simulator!"
 		<< "\n****************************************************\n\n";
 
-
-
-	//std::string temp = "Noah Raymond";
-	//User u;
-	////u.registerUser();
-	//u.loadData(); // load data from text file into a queue
-	////u.displayList();
-	//u.searchUser(temp);
 }
 
-// user register for vaccine
-// can have status // 0- havent vac // 1- received first dose, waiting for 2nd
-// vac center search user
-// vac center give vaccine
-// if 0, update 1 // if 1, dequeue
+
